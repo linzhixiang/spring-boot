@@ -15,10 +15,11 @@ import com.lin.springboot.entity.Student;
  */
 @Mapper
 @Component(value = "StudentMapper") 
+
 public interface StudentMapper {
 
     List<Student> likeName(String name);
-
+    
     Student getById(int id);
 
     String getNameById(int id);
